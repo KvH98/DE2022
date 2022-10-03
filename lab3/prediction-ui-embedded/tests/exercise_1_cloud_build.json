@@ -5,7 +5,7 @@
       "args": [
         "build",
         "-t",
-        "gcr.io/$PROJECT_ID/prediction-ui-embedded:0.0.1",
+        "gcr.io/lab-1-data-engineering/prediction-ui-embedded:0.0.1",
         "./lab3/prediction-ui-embedded"
       ]
     },
@@ -13,7 +13,7 @@
       "name": "gcr.io/cloud-builders/docker",
       "args": [
         "push",
-        "gcr.io/$PROJECT_ID/prediction-ui-embedded:0.0.1"
+        "gcr.io/lab-1-data-engineering/prediction-ui-embedded:0.0.1"
       ]
     },
     {
@@ -24,7 +24,7 @@
         "deploy",
         "prediction-service",
         "--image",
-        "gcr.io/$PROJECT_ID/prediction-ui-embedded:0.0.1",
+        "gcr.io/lab-1-data-engineering/prediction-ui-embedded:0.0.1",
         "--region",
         "us-central1",
         "--platform",
