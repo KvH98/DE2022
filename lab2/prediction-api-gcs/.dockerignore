@@ -1,6 +1,4 @@
 .git
 .gitignore
 Dockerfile*
-.myenv
-tests
-testResources
+cloudbuild*
